@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Epic Podcast Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-indigo-900 via-purple-900 to-black text-white font-sans">
+  <!-- Header -->
+  <header class="p-6 flex justify-between items-center bg-black/40 backdrop-blur-md sticky top-0 z-50 shadow-lg">
+    <h1 class="text-3xl font-extrabold text-purple-400">🎙️ My Podcast</h1>
+    <nav class="space-x-6">
+      <a href="#home" class="hover:text-purple-300 transition">Home</a>
+      <a href="#episodes" class="hover:text-purple-300 transition">Episodes</a>
+      <a href="#about" class="hover:text-purple-300 transition">About</a>
+    </nav>
+  </header>
+
+  <!-- Featured Podcast -->
+  <section id="home" class="max-w-5xl mx-auto text-center py-16 px-6">
+    <h2 class="text-4xl font-bold mb-6 text-purple-300">Featured Podcast</h2>
+    <div class="bg-white/10 rounded-2xl shadow-xl p-8 backdrop-blur-md">
+      <img src="https://via.placeholder.com/400x250" alt="Podcast Cover" class="rounded-xl mx-auto shadow-md">
+      <h3 class="text-2xl font-bold mt-4">The Daily Knowledge</h3>
+      <p class="text-gray-300 mt-2">A podcast about learning something new every day!</p>
+      <audio controls class="mt-4 w-full">
+        <source src="episode1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </section>
+
+  <!-- Episodes -->
+  <section id="episodes" class="bg-gradient-to-r from-purple-800/60 to-indigo-900/60 py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center text-purple-300 mb-12">Latest Episodes</h2>
+      <div class="grid gap-8 md:grid-cols-2">
+        <article class="bg-white/10 rounded-xl p-6 shadow-lg hover:scale-105 transition">
+          <h3 class="text-xl font-semibold">Episode 1: The Future of Tech</h3>
+          <p class="text-gray-300 mt-2">Discussion about AI and future innovations.</p>
+          <audio controls class="mt-4 w-full">
+            <source src="episode1.mp3" type="audio/mpeg">
+          </audio>
+        </article>
+
+        <article class="bg-white/10 rounded-xl p-6 shadow-lg hover:scale-105 transition">
+          <h3 class="text-xl font-semibold">Episode 2: Healthy Living</h3>
+          <p class="text-gray-300 mt-2">Tips and tricks for a healthier lifestyle.</p>
+          <audio controls class="mt-4 w-full">
+            <source src="episode2.mp3" type="audio/mpeg">
+          </audio>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto text-center py-16 px-6">
+    <h2 class="text-3xl font-bold text-purple-300 mb-4">About This Platform</h2>
+    <p class="text-gray-300 leading-relaxed">
+      This is a simple podcast platform where you can get recent podcasts to listen to.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-black/50 mt-10 border-t border-gray-800">
+    <p class="text-gray-400">&copy; 2025 My Podcast Platform | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
